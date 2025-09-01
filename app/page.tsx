@@ -1,10 +1,10 @@
 import { ScrollAreaDemo } from "@/components/HomePageComponents/ScrollAreaDemo";
 
 export default async function Home() {
-  const res = await fetch("/api/movies", {
-    cache: "no-store", // her istekte güncel veriyi çekmek için
-  });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const res = await fetch(`${baseUrl}/api/movies`, { cache: "no-store" });
   const movies = await res.json();
+
   return (
     <div className="flex relative flex-col justify-start items-center w-full">
       <ScrollAreaDemo movies={movies} />
