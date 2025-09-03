@@ -105,7 +105,27 @@ const movies = [
       },
     ],
   },
-  // { id: 3, movieName: "Extraction", avatar: "avatars/extraction.png" },
+  {
+    id: 3,
+    movieName: "The King's Man",
+    avatar: "avatars/kingsman.png",
+    song: [
+      {
+        id: 1,
+        url: "songs/kingsman.mp3",
+        name: "The King's Man",
+        songPhoto: "songsPhoto/kingsman.png",
+      },
+    ],
+    clip: [
+      {
+        id: 1,
+        url: "clips/rasputin.mp4",
+        name: "Rasputin Fight",
+        clipPhoto: "clipsPhoto/kingsmanclip.png",
+      },
+    ],
+  },
 ];
 
 export async function GET(req: NextRequest) {
