@@ -9,6 +9,8 @@ interface Store {
   setSecilenFilmSahneleri: (number: number) => void;
   setSecilenFilmSahnesiURL: (url: string | null) => void;
   setSecilenFilmMuzigiURL: (url: string | null) => void;
+  onPause: boolean;
+  setOnPause: (status: boolean) => void;
 }
 
 const useStore = create<Store>()((set) => ({
@@ -16,6 +18,7 @@ const useStore = create<Store>()((set) => ({
   secilenFilmSahneleri: null,
   secilenFilmSahnesiURL: null,
   secilenFilmMuzigiURL: null,
+  onPause: true,
   setSecilenFilmMuzikleri: (number: number) => {
     set(() => ({
       secilenFilmMuzikleri: number,
@@ -34,6 +37,11 @@ const useStore = create<Store>()((set) => ({
   setSecilenFilmMuzigiURL: (url: string | null) => {
     set(() => ({
       secilenFilmMuzigiURL: url,
+    }));
+  },
+  setOnPause: (status: boolean) => {
+    set(() => ({
+      onPause: status,
     }));
   },
 }));

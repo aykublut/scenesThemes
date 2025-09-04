@@ -56,7 +56,7 @@ export function ScrollAreaDemo({ movies }: { movies: any }) {
                 ? movies[secilenFilmMuzikleri].song.map((song: any) => (
                     <React.Fragment key={song.id}>
                       <SongElement song={song} />
-                      <Separator className="my-2" />
+                      <Separator className="my-2 " />
                     </React.Fragment>
                   ))
                 : null}
