@@ -36,7 +36,7 @@ export function ScrollAreaDemo({ movies }: { movies: any }) {
         </ScrollArea>
       </div>
       <div className="w-[90%] lg:w-[50%] h-full  ">
-        <ScrollArea className="  h-[15rem] lg:h-[30rem] w-full rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
+        <ScrollArea className="  h-[13rem] lg:h-[30rem] w-full rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
           <div className="p-4">
             <h4 className="mb-4 text-sm leading-none font-medium text-center">
               movies
@@ -50,7 +50,7 @@ export function ScrollAreaDemo({ movies }: { movies: any }) {
           </div>
         </ScrollArea>
         <div className="lg:hidden flex">
-          <ScrollArea className="h-[15rem] lg:h-[30rem] w-[50%] rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
+          <ScrollArea className="h-[11rem] lg:h-[30rem] w-[50%] rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
             <div className="p-4">
               <h4 className="mb-4 text-sm leading-none font-medium text-center">
                 songs
@@ -65,7 +65,7 @@ export function ScrollAreaDemo({ movies }: { movies: any }) {
                 : null}
             </div>
           </ScrollArea>
-          <ScrollArea className=" h-[15rem] lg:h-[30rem] w-[50%] rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
+          <ScrollArea className=" h-[11rem] lg:h-[30rem] w-[50%] rounded-md border shadow-sm dark:shadow-blue-100 shadow-black">
             <div className="p-4">
               <h4 className="mb-4 text-sm leading-none font-medium text-center">
                 clips
