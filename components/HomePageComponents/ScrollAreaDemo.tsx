@@ -9,7 +9,10 @@ import useStore from "@/store/store";
 import ClipElement from "./ClipElement";
 
 export function ScrollAreaDemo({ movies }: { movies: any }) {
-  const { secilenFilmMuzikleri, secilenFilmSahneleri } = useStore();
+  const { secilenFilmMuzikleri, secilenFilmSahneleri, setMovies } = useStore();
+  React.useEffect(() => {
+    setMovies(movies);
+  }, []);
   console.log(movies);
 
   return (
