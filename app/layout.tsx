@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.className} antialiased  min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.className} antialiased min-h-[90%]  sm:min-h-screen flex flex-col`}
       >
         <ThemeProvider
           attribute="class"
