@@ -30,6 +30,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "scenesThemes",
   description: "scenesThemes-next.js-vercel",
+  openGraph: {
+    title: "scenesThemes",
+    description: "Filmlerde sahneler ve müzikler",
+    url: "https://scenes-themes.vercel.app/", // kendi site URL
+    siteName: "scenesThemes",
+
+    images: [
+      {
+        url: "/scenes-themes.png", // public/images/thumbnail.png
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

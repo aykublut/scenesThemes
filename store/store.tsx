@@ -3,6 +3,8 @@ import { create } from "zustand";
 interface Store {
   movies: any;
   setMovies: (apiCall: any) => void;
+  makingList: boolean;
+  setMakingList: (status: boolean) => void;
   secilenFilmMuzikleri: number | null;
   secilenFilmSahneleri: number | null;
   secilenFilmSahnesiURL: string | null;
@@ -20,6 +22,12 @@ const useStore = create<Store>()((set) => ({
   setMovies: (apiCall) => {
     set(() => ({
       movies: apiCall,
+    }));
+  },
+  makingList: false,
+  setMakingList: (status: boolean) => {
+    set(() => ({
+      makingList: status,
     }));
   },
   secilenFilmMuzikleri: null,
