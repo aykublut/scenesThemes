@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/scenes-themes.png", // public/images/thumbnail.png
+        url: "/thumbnail.png", // public/images/thumbnail.png
         width: 1200,
         height: 630,
       },
